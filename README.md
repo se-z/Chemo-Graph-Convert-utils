@@ -109,7 +109,7 @@ positional arguments:
 ```
 2. demo
 ```
-$ python3 test_3_network.py 
+$ python3 test_3_network.py 10 
 ```
 
 3. output

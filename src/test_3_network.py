@@ -16,7 +16,7 @@ if __name__ == "__main__":
     parser.add_argument('pic_num', default=5,
                         help="number of network pictures.")
     args = parser.parse_args()
-    pic_mum = args.pic_mum
+    pic_num = int(args.pic_num)
 
     Converter = cvt.Converter(CONFIG_PATH)
-    Converter.graphDraw(OUT_PATH, DB_PATH + "/dfs.txt", pic_mum)
+    Converter.graphDraw(OUT_PATH, DB_PATH + "/dfs.txt", pic_num)
