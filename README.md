@@ -16,10 +16,10 @@ python modules for chemical data visualization, and converter. This program conv
 - The author's specialty is computer science, so I don't know much about chemoinformatics.
 - In the realm of chemoinfomatics, It is possible that my code sometimes process inaccurately for input data. 
 - Supported data structure are follows
-    - SMILES
+    - [SMILES](https://ja.wikipedia.org/wiki/SMILES%E8%A8%98%E6%B3%95)
+    - [MOL](http://www.metabolomics.jp/wiki/Aritalab:Lecture/Compchem/MOL)
     - DFS Code (Depth first search code)
-    - Adhancy Matrix
-    - MOL
+    - Adjancy Matrix
 - Unsupported symbols of SMILES are follows,
     - "@"
     - "."
