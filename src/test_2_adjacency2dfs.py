@@ -12,7 +12,7 @@ OUT_PATH = "../out/dfscode"
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
-        description="convert adjancy matrix to DFS Code")
+        description="convert adjacency matrix to DFS Code")
     parser.add_argument('id', help="data_id")
     parser.add_argument(
         'out_path', default="../out/dfscodee", help="output dir. default is ../out/dfscode ")
@@ -30,12 +30,12 @@ if __name__ == "__main__":
         print(e)
         sys.exit()
 
-    A, v = Converter.mol2adjancy()
+    A, v = Converter.mol2adjacency()
 
-    # convert adjancy to DFS Code
+    # convert adjacency to DFS Code
     id_label_dict = {int(k): int(v) for (k, v) in v}
     try:
-        dfs_v, dfs_e = Converter.adjancy2dfs(A, id_label_dict)
+        dfs_v, dfs_e = Converter.adjacency2dfs(A, id_label_dict)
     except Exception as e:
         print(e)
         sys.exit()

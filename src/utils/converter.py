@@ -190,7 +190,7 @@ class Converter:
                 "This molcule is size over, too small, or ion.")
         print(self.MOL_str)
 
-    def mol2adjancy(self):
+    def mol2adjacency(self):
         NUM_VER_EDGE_LINE = 3
         mol_list = self.MOL_str.split("\n")
         nums = re.split(" +", mol_list[NUM_VER_EDGE_LINE])
@@ -230,7 +230,7 @@ class Converter:
 
         return A, vertex_arr
 
-    def adjancy2dfs(self, old_A, id_labels):
+    def adjacency2dfs(self, old_A, id_labels):
 
         V_size = len(id_labels)
         DFS_VERTEX = []  # [頂点id, label]

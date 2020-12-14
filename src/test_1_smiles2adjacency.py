@@ -7,12 +7,12 @@ import argparse
 
 CONFIG_PATH = "../config/atomMap.txt"
 DB_PATH = "../demoDB/smiles"
-OUT_PATH = "../out/adjancy"
+OUT_PATH = "../out/adjacency"
 
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
-        description="convert smiles format 2 adjancy matrix")
+        description="convert smiles format 2 adjacency matrix")
     parser.add_argument('id', help="data_id ")
 
     args = parser.parse_args()
@@ -26,8 +26,8 @@ if __name__ == "__main__":
         print(e)
         sys.exit()
 
-    A, v = Converter.mol2adjancy()
-    # labeled adjancy matrix
+    A, v = Converter.mol2adjacency()
+    # labeled adjacency matrix
     for i in range(len(A)):
         print(A[i, :])
 

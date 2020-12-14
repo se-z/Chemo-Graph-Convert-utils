@@ -19,7 +19,7 @@ python modules for chemical data visualization, and converter. This program conv
     - [SMILES](https://ja.wikipedia.org/wiki/SMILES%E8%A8%98%E6%B3%95)
     - [MOL](http://www.metabolomics.jp/wiki/Aritalab:Lecture/Compchem/MOL)
     - DFS Code (Depth first search code)
-    - Adjancy Matrix
+    - adjacency Matrix
 - Unsupported symbols of SMILES are follows,
     - "@"
     - "."
@@ -37,18 +37,18 @@ python modules for chemical data visualization, and converter. This program conv
 
 # Demo 
 
-### smiles -> adjancy
+### smiles -> adjacency
 
 1. experimental setting is writtern in demodb/ 
     - demoDB/smiles : put smiles format input file in this directory
     - file name : NUM.txt 
         - ex) 1.txt 
-2. test_1_smiles2adjancy.py 
+2. test_1_smiles2adjacency.py 
 
 ```
-usage: test_1_smiles2adjancy.py [-h] id
+usage: test_1_smiles2adjacency.py [-h] id
 
-convert smiles format 2 adjancy matrix
+convert smiles format 2 adjacency matrix
 
 positional arguments:
   id          data_id
@@ -58,27 +58,27 @@ positional arguments:
 
 ```
 $ cd ./src
-$ python3 test_1_smiles2adjancy.py 1
+$ python3 test_1_smiles2adjacency.py 1
 ```
 
 4. output
 - standard output
     - SMILES format
     - MOL format
-    - Adjancy matrix, and vertex labels
+    - adjacency matrix, and vertex labels
 
 
-### adjancy matrix -> DFS Code 
+### adjacency matrix -> DFS Code 
 1. experimental setting is writtern in demodb/ 
     - demoDB/smiles : put smiles format input file in this directory
     - file name : NUM.txt 
         - ex) 1.txt 
-2. test_2_adjancy2dfs.py 
+2. test_2_adjacency2dfs.py 
 
 ```
-usage: test_2_adjancy2dfs.py [-h] id out_path
+usage: test_2_adjacency2dfs.py [-h] id out_path
 
-convert adjancy matrix to DFS Code
+convert adjacency matrix to DFS Code
 
 positional arguments:
   id          data_id
@@ -89,7 +89,7 @@ positional arguments:
 
 ```
 $ cd ./src
-$ python3 test_2_adjancy2dfs.py 1
+$ python3 test_2_adjacency2dfs.py 1
 ```
 
 4. output
@@ -128,7 +128,7 @@ This implementation will be output a specified number of network picture. The pl
 ```
 usage: test_4_dfs2mol.py [-h] id out_path
 
-convert adjancy matrix to DFS Code
+convert adjacency matrix to DFS Code
 
 positional arguments:
   id          data_id
@@ -146,7 +146,7 @@ $ python3 test_4_dfs2mol.py 1
 
 #### supliment
 This demo code convert from smiles format in this flows. 
-**smiles => MOL => Adjancy matrix => DFS Code => MOL**
+**smiles => MOL => adjacency matrix => DFS Code => MOL**
 I want to show you that this code can convert from original DFS Code to MOL format.
 
 
@@ -160,7 +160,7 @@ I want to show you that this code can convert from original DFS Code to MOL form
 ```
 usage: test_5_mol2svg.py [-h] id out_path
 
-convert adjancy matrix to DFS Code
+convert adjacency matrix to DFS Code
 
 positional arguments:
   id          data_id
