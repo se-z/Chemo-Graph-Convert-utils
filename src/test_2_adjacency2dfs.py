@@ -15,7 +15,7 @@ if __name__ == "__main__":
         description="convert adjacency matrix to DFS Code")
     parser.add_argument('id', help="data_id")
     parser.add_argument(
-        'out_path', default="../out/dfscodee", help="output dir. default is ../out/dfscode ")
+        'out_path', default="../out/dfscode", help="output dir. default is ../out/dfscode ")
 
     args = parser.parse_args()
     data_id = args.id
